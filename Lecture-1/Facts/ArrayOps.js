@@ -29,10 +29,26 @@ console.log(primeArr);
 // mymap
 // myfilter
 
-function squarer(x){
-    return x*x;
+function squarer(x) {
+    return x * x;
 }
 
-mymap(arr, squarer){
-    
+let SqArr = mymap(arr, cb);
+console.log(SqArr);
+
+function mymap(arr, cb) {
+    let newArr = [];
+    for (let i = 0; i < arr.lenth; i++) {
+        let ans = squarer(arr[i]);
+        newArr.push(ans);
+    } return newArr;
+
+}
+
+function myfilter(arr, squarer) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        let ans = squarer(arr[i]);
+    } return newArr;
+
 }
