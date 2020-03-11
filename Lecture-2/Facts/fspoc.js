@@ -13,7 +13,6 @@ function displayList(src) {
         for (let i = 0; i < childrens.length; i++) {
             let cChPath = path.join(src, childrens[i]);
             displayList(cChPath);
-
         }
     }
 }
